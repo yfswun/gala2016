@@ -16,7 +16,7 @@
 .side_nav a {
 	padding:6px 6px 6px 30px;
 	text-decoration: none;
-	font-size:1.2em;
+	font-size:1.1em;
 	color: #818181;
 	display: block;
 	transition: 0.3s;
@@ -66,6 +66,21 @@
 
 /* On smaller screens, where height is less than 450px, change the style of the side_nav (less padding and a smaller font size) */
 @media screen and (max-height: 450px) {
-	.side_nav {padding-top: 15px;}
-	.side_nav a {font-size:1em;}
+	.side_nav {
+		padding-top: 15px;
+	}
+	.side_nav a {
+		font-size:0.9em;
+		padding-bottom:4px;
+	}
+	.side_nav a.l2 {font-size:0.8em;}
+}
+
+/* phones */
+@media only screen and (max-width:600px) {
+	.side_nav a {
+		font-size:0.9em;
+		padding-bottom:4px;
+	}
+	.side_nav a.l2 {font-size:0.8em;}
 }
