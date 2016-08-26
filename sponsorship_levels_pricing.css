@@ -1,0 +1,183 @@
+/* apply a natural box layout model to all elements, but allowing components to change */
+html {
+	box-sizing:border-box;
+}
+*, *:before, *:after {
+	box-sizing:inherit;
+}
+
+.plan-container {
+	display:block;
+	font-size:12px;
+	line-height:1.25;
+}
+
+.columns {
+	float:left;
+	padding:8px;
+	width:12.5%;
+}
+
+.columns.head-col {
+	font-weight:bold;
+}
+
+.plan {
+	list-style-type:none;
+	border:1px solid #ccc;
+	margin:0;
+	padding:0;
+	-webkit-transition:0.3s;
+	transition:0.3s;
+}
+
+.columns.data-col:hover {
+	box-shadow:0 8px 18px 5px #767676;
+}
+
+.plan li {
+	border-bottom:1px solid #eee;
+	padding:10px 5px;
+	text-align:center;
+	line-height:1.25;
+	min-height:45px;
+}
+
+.plan .header {
+	background-color:#800000;
+	color:white;
+	font-size:14px;
+	min-height:50px;
+}
+
+.plan .price {
+	background-color:#FFEBCD !important;
+	font-size:14px;
+}
+
+.plan li:nth-child(even) {
+	background-color:#f2f2f2;
+}
+
+.plan .buy {
+	background-color:#800000 !important;
+	font-size:10px;
+	line-height:1.25;
+	height:65px;
+}
+
+.button {
+	background-color:#00BFFF;
+	border:none;
+	color:white;
+	box-shadow:0 0.25em 0 0 #004c66,0 4px 9px rgba(0,0,0,0.75);
+	text-align:center;
+	text-decoration:none;
+	font-size:14px;
+	line-height:1.25;
+}
+
+/*
+.button:hover {
+	background-color:cyan;
+	box-shadow:0 0.25em 0 0 #0085b2,0 4px 9px rgba(0,0,0,0.75);
+	font-weight:bold;
+}
+*/
+
+.label {
+	color:#167ac6;
+}
+
+/* Sponsorship level description */
+
+.sub-menu li {
+	list-style:none;
+	padding:0;
+	margin:0;
+}
+
+.sub-menu li span {
+	display:inline-block;
+	color:black;
+}
+ 
+.sub-menu li:hover {
+	background:#efefef;
+}
+
+.sub-menu .offer {
+	vertical-align:top;
+	border-bottom:1px solid lightgray;
+}
+.sub-menu .offer_name {
+	display:inline-block;
+	font-size:1em;
+	font-weight:bold;
+}
+
+.sub-menu .offer_desc {
+	display:inline-block;
+	font-size:0.9em;
+	color:gray;
+}
+
+/* Media queries */
+
+@media only screen and (max-width:600px) {
+	.columns {
+		width:100%;
+	}
+	div.columns.head-col, .space {
+		display:none;
+	}
+	.label {
+		display:visible;
+	}
+	.sub-menu .offer_name {
+		width:100%;
+	}
+	.sub-menu .offer_desc {
+		width:100%;
+	}
+}
+
+@media only screen and (min-width:601px) and (max-width:800px) {
+	.columns {
+		width:50%;
+	}
+	div.columns.head-col, .space {
+		display:none;
+	}
+	.label {
+		display:visible;
+	}
+	.sub-menu .offer_name {
+		width:30%;
+	}
+	.sub-menu .offer_desc {
+		width:70%;
+	}
+}
+
+@media only screen and (min-width:801px) {
+	.label {
+		display:none;
+	}
+	.plan .header {
+		height:80px;
+	}
+	.plan .header a {
+		display:inline-block;
+		padding-top:8px;
+	}
+	.plan li.long {
+		height:50px;
+	}
+	.sub-menu .offer_name {
+		width:30%;
+	}
+	.sub-menu .offer_desc {
+		width:70%;
+	}
+}

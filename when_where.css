@@ -1,0 +1,68 @@
+.essentials-background {
+	padding:1px;
+	background-color:#ffdb99;
+	background-image:url('https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSCUG8ad9yS96wEBlG-xfvBNd_UIpzyN1fcqKsoKfltMEmK1ZTl');
+	background-size:cover;
+}
+
+.essentials-transbox {
+	margin:30px;
+	padding:20px;
+	background-color:white;
+	opacity:0.9;
+	filter:alpha(opacity=90); /* For IE8 and earlier */
+}
+
+.gala-title {
+	color:#800000;
+	font-weight:bold;
+}
+
+.essentials p {
+	line-height:1.5;
+}
+
+.tblWhenWhere {
+	display:table;
+	border-collapse:collapse;
+	border:0;
+	margin:auto;
+}
+
+.tblWhenWhere .tcell {
+	border:0;
+	font-size:1.1em;
+}
+
+.c2-1 {
+	padding-right:30px;
+	text-align:center;
+}
+.c2-2 {
+	padding-left:30px;
+	text-align:center;
+}
+
+.tblWhenWhere h5 {
+	margin-top:15px;
+}
+
+.tblWhenWhere img {
+	width:150px;
+}
+
+/* Media queries */
+
+@media only screen and (max-width: 600px) {
+
+	.tblWhenWhere,
+	.tblWhenWhere .trow,
+	.tblWhenWhere .tcell {
+		display:block;
+	}
+
+	.tblWhenWhere .tcell {
+		padding:5px;
+	}
+
+}

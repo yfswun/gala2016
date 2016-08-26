@@ -1,0 +1,71 @@
+/* The side navigation menu */
+.side_nav {
+	height: 100%; /* 100% Full-height */
+	width: 0; /* 0 width - change this with JavaScript */
+	position: fixed; /* Stay in place */
+	z-index: 100000; /* Stay on top, over admin toolbar */
+	top: 0;
+	left: 0;
+	background-color:#ddd;
+	overflow-x: hidden; /* Disable horizontal scroll */
+	padding-top: 60px; /* Place content 60px from the top */
+	transition: 0.5s; /* 0.5 second transition effect to slide in the side_nav */
+}
+
+/* The navigation menu links */
+.side_nav a {
+	padding:6px 6px 6px 30px;
+	text-decoration: none;
+	font-size:1.2em;
+	color: #818181;
+	display: block;
+	transition: 0.3s;
+}
+
+.side_nav a.l2 {
+	padding-left:45px;
+	padding-top:3px;
+	font-size:1em;
+}
+
+/* When you mouse over the navigation links, change their color */
+.side_nav a:hover, .offcanvas a:focus{
+	color: #f1f1f1;
+}
+
+/* Position and style the close button (top right corner) */
+.side_nav .closebtn {
+	position: absolute;
+	top: 0;
+	right:20px;
+	font-size: 36px;
+	margin-left: 50px;
+}
+
+#page_menu {
+	font-size:25px;
+	font-weight:bold;
+	color:#0067ce;
+	background-color:lightgray;
+	top:50%;
+	left:1%;
+	position:fixed;
+	z-index:99999;
+	padding:10px 5px;
+	border-radius:8px;
+	cursor:pointer;
+}
+
+/* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+/*
+#main {
+	transition: margin-left .5s;
+	padding: 20px;
+}
+*/
+
+/* On smaller screens, where height is less than 450px, change the style of the side_nav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+	.side_nav {padding-top: 15px;}
+	.side_nav a {font-size:1em;}
+}

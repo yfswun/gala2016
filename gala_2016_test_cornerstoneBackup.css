@@ -1,0 +1,327 @@
+/* apply a natural box layout model to all elements, but allowing components to change */
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+.AlignCenter {
+  text-align:center;
+}
+
+.price-container {
+	display:block;
+}
+
+.columns {
+	float: left;
+	padding: 8px;
+	width: 12.5%;
+}
+
+.columns.head-col {
+	font-weight: bold;
+}
+
+.price {
+	list-style-type: none;
+	border: 1px solid #ccc;
+	margin: 0;
+	padding: 0;
+	-webkit-transition: 0.3s;
+	transition: 0.3s;
+}
+
+.columns.data-col:hover {
+	box-shadow: 0 8px 18px 5px #767676;
+}
+
+.price li {
+	border-bottom: 1px solid #eee;
+	padding: 10px 5px;
+	text-align: center;
+	line-height: 1.5;
+	min-height: 50px;
+}
+
+.price .header {
+	background-color: #800000;
+	color: white;
+	font-size: 14px;
+	height: 90px;
+	min-height: 50px;
+}
+
+.price li:nth-child(even) {
+	background-color: #f2f2f2;
+}
+
+.price .plan-price {
+	background-color: #FFEBCD !important;
+	font-size: 16px;
+}
+
+.price .buy {
+	background-color: #800000 !important;
+	font-size: 10px;
+}
+
+.button {
+	background-color: #00BFFF;
+	border: none;
+	color: white;
+	box-shadow: 0 0.25em 0 0 #004c66,0 4px 9px rgba(0,0,0,0.75);
+	text-align: center;
+	text-decoration: none;
+	font-size: 14px;
+}
+
+/*.button:hover {
+	background-color:cyan;
+	box-shadow: 0 0.25em 0 0 #0085b2,0 4px 9px rgba(0,0,0,0.75);
+	font-weight: bold;
+}*/
+
+.label {
+	color: #167ac6;
+}
+
+@media only screen and (max-width: 600px) {
+	.columns {
+		width: 100%;
+	}
+	div.columns.head-col, .space {
+		display:none;
+	}
+	.label {
+		display:visible;
+	}
+}
+
+/* Program Book Ad Pricing */
+
+.tbl {
+	display:table;
+	border-collapse:collapse;
+	margin:auto;
+}
+
+.trow {
+	display:table-row;
+}
+
+.tcell {
+	display:table-cell;
+	border:1px solid #ccc;
+	padding:10px 20px;
+}
+
+.theader {
+	background-color:#800000;
+	color:white;
+	text-transform:uppercase;
+}
+
+.theader, .lbl {
+	font-weight:bold;
+}
+
+.c3-1 {
+	width:30%;
+}
+.c3-2 {
+	width:50%;
+}
+.c3-3 {
+	width:20%;
+	text-align:right;
+	padding-right:5%;
+}
+
+.theader.tcell.c3-1, .theader.tcell.c3-2, .theader.tcell.c3-3 {
+	padding:10px 20px;
+	text-align:center;
+}
+
+/* Essentials */
+
+.essentials-background {
+	padding:1px;
+	background-color:#ffdb99;
+	background-image:url('https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSCUG8ad9yS96wEBlG-xfvBNd_UIpzyN1fcqKsoKfltMEmK1ZTl');
+	background-size:cover;
+}
+
+.essentials-transbox {
+	margin:30px;
+	padding:20px;
+	background-color:white;
+	opacity:0.9;
+	filter:alpha(opacity=90); /* For IE8 and earlier */
+}
+
+.gala-title {
+	color:#800000;
+	font-weight:bold;
+}
+
+.essentials p {
+	line-height:1.5;
+}
+
+.tblWhenWhere {
+	display:table;
+	border-collapse:collapse;
+	border:0;
+	margin:auto;
+}
+
+.tblWhenWhere .tcell {
+	border:0;
+	font-size:1.1em;
+}
+
+.c2-1 {
+	padding-right:30px;
+	text-align:center;
+}
+.c2-2 {
+	padding-left:30px;
+	text-align:center;
+}
+
+.tblWhenWhere h5 {
+	margin-top:15px;
+}
+
+.tblWhenWhere img {
+	width:150px;
+}
+
+/* Disable Buy Buttons */
+
+.unavail-icon {
+	font-size: 20px;
+	font-weight: bold;
+	color: white;
+	padding:3px;
+	display:inline-block;
+}
+.unavail-text {
+	display:block;
+	padding:10px;
+}
+.button {
+	color:darkgrey;
+	background-color: black;
+	font-size:4px;
+	cursor: not-allowed;
+	box-shadow: none;
+}
+.button:hover {
+	color:darkgrey;
+	background-color:black;
+	box-shadow: 0 0.25em 0 0 #0085b2,0 4px 9px rgba(0,0,0,0.75);
+	box-shadow: none;
+}
+.unavail-btn {
+	pointer-events: none;
+}
+
+/* Sponsorship level description */
+
+.sub-menu li {
+	list-style: none;
+	padding:0;
+	margin:0;
+}
+
+.sub-menu li span {
+	display:inline-block;
+	color: black;
+}
+ 
+.sub-menu li:hover {
+	background: #efefef;
+}
+
+.sub-menu .offer {
+	vertical-align:top;
+	border-bottom:1px solid lightgray;
+}
+.sub-menu .offer_name {
+	display:inline-block;
+	font-size:1em;
+	font-weight:bold;
+}
+
+.sub-menu .offer_desc {
+	display:inline-block;
+	font-size:0.9em;
+	color:gray;
+}
+
+
+/* Media queries */
+
+@media only screen and (max-width: 600px) {
+	.tblWhenWhere,
+	.tblWhenWhere .trow,
+	.tblWhenWhere .tcell {
+		display:block;
+	}
+  
+ 	.tblWhenWhere .tcell {
+		padding:5px;
+	}
+ 
+  .columns {
+		width: 100%;
+	}
+	div.columns.head-col, .space {
+		display:none;
+	}
+	.label {
+		display:visible;
+	}
+	.sub-menu .offer_name {
+		width:100%;
+	}
+	.sub-menu .offer_desc {
+		width:100%;
+	}
+}
+
+@media only screen and (min-width: 601px) and (max-width: 800px) {
+	.columns {
+		width: 50%;
+	}
+	div.columns.head-col, .space {
+		display:none;
+	}
+	.label {
+		display:visible;
+	}
+	.sub-menu .offer_name {
+		width:30%;
+	}
+	.sub-menu .offer_desc {
+		width:70%;
+	}
+}
+
+@media only screen and (min-width: 801px) {
+	.label {
+		display:none;
+	}
+	.price li {
+		height: 60px;
+	}
+	.sub-menu .offer_name {
+		width:30%;
+	}
+	.sub-menu .offer_desc {
+		width:70%;
+	}
+}

@@ -1,0 +1,42 @@
+.tbl {
+	display:table;
+	border-collapse:collapse;
+	margin:auto;
+}
+
+.trow {
+	display:table-row;
+}
+
+.tcell {
+	display:table-cell;
+	border:1px solid #ccc;
+	padding:10px 20px;
+}
+
+.theader {
+	background-color:#800000;
+	color:white;
+	text-transform:uppercase;
+}
+
+.theader, .lbl {
+	font-weight:bold;
+}
+
+.c3-1 {
+	width:30%;
+}
+.c3-2 {
+	width:50%;
+}
+.c3-3 {
+	width:20%;
+	text-align:right;
+	padding-right:5%;
+}
+
+.theader.tcell.c3-1, .theader.tcell.c3-2, .theader.tcell.c3-3 {
+	padding:10px 20px;
+	text-align:center;
+}

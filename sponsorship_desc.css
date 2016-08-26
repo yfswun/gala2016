@@ -1,0 +1,33 @@
+.sub-menu li {
+	list-style:none;
+	padding:0;
+	margin:0;
+}
+
+.sub-menu li span {
+	display:inline-block;
+	color:black;
+}
+ 
+.sub-menu li:hover a {
+	background:#efefef;
+}
+
+.sub-menu .offer {
+	vertical-align:top;
+	border-bottom:1px solid lightgray;
+}
+
+.sub-menu .offer_name {
+	display:inline-block;
+/*	width:30%;*/
+	font-size:1em;
+	font-weight:bold;
+}
+
+.sub-menu .offer_desc {
+	display:inline-block;
+/*	width:70%;*/
+	font-size:0.8em;
+	color:gray;
+}
