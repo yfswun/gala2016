@@ -6,6 +6,13 @@ html {
 	box-sizing:inherit;
 }
 
+.caution {color:red;}
+
+/* Override renew CSS */
+p {margin-bottom:1.25em;}
+h5 {margin-top:1.25em;}
+
+
 /* Sponsorship Levels */
 
 .plan-container {
@@ -31,6 +38,13 @@ html {
 	padding:0;
 	-webkit-transition:0.3s;
 	transition:0.3s;
+}
+
+a.sponsorship_desc {
+	color:cyan;
+}
+a.sponsorship_desc:hover {
+	font-weight:bold;
 }
 
 .columns.data-col:hover {
@@ -95,6 +109,7 @@ html {
 .tbl {
 	display:table;
 	border-collapse:collapse;
+	max-width:100%;
 	margin:auto;
 }
 
@@ -105,7 +120,7 @@ html {
 .tcell {
 	display:table-cell;
 	border:1px solid #ccc;
-	padding:10px 20px;
+	padding:10px;
 }
 
 .theader {
@@ -118,21 +133,39 @@ html {
 	font-weight:bold;
 }
 
-.c3-1 {
-	width:30%;
-}
-.c3-2 {
-	width:50%;
-}
-.c3-3 {
-	width:20%;
-	text-align:right;
-	padding-right:5%;
+.c3-1 {width:30%;}
+.c3-2 {width:50%;}
+.c3-3 {width:20%;}
+
+.c4-1 {width:15%;}
+.c4-2 {width:30%;}
+.c4-3 {width:25%;}
+.c4-4 {width:10%;}
+
+.c3-1, .c3-2, .c3-3,
+.c4-1, .c4-2, .c4-3, .c4-4 {
+	text-align:center;
 }
 
-.theader.tcell.c3-1, .theader.tcell.c3-2, .theader.tcell.c3-3 {
-	padding:10px 20px;
+.ad {
 	text-align:center;
+}
+
+div.h4.ad, div.h5.ad {
+	margin-top:1.25em;
+	margin-bottom:0.2em;
+}
+
+div.ad {
+	margin:auto;
+}
+
+p.ad {
+	font-size:1.25em;
+}
+
+li.ad {
+	list-style-position:inside;
 }
 
 /* Sponsorship level description */
