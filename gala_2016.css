@@ -110,7 +110,7 @@ a.sponsorship_desc:hover {
 	display:table;
 	border-collapse:collapse;
 	max-width:100%;
-	margin:auto;
+	margin:15px auto;
 }
 
 .trow {
@@ -131,6 +131,10 @@ a.sponsorship_desc:hover {
 
 .theader, .lbl {
 	font-weight:bold;
+}
+
+.trow:nth-child(even) {
+	background-color:#f2f2f2;
 }
 
 .c3-1 {width:30%;}
