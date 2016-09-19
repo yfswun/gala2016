@@ -8,10 +8,23 @@ html {
 
 .caution {color:red;}
 
-/* Override renew CSS */
-p {margin-bottom:1.25em;}
-h5 {margin-top:1.25em;}
+/* Override Parent CSS */
 
+p { margin-bottom:1.25em; }
+
+h5 { margin-top:1.25em; }
+
+.x-img { margin-bottom:0; }
+
+.wp-caption, .wp-caption * {
+	text-transform:none !important;
+}
+
+.wp-caption {
+	max-width:95%;
+	font-weight:bold;
+	border:0;
+}
 
 /* Sponsorship Levels */
 
@@ -171,6 +184,130 @@ p.ad {
 li.ad {
 	list-style-position:inside;
 }
+
+/* ad formats */
+
+#ad_map {
+	margin:auto;
+	padding:0;
+	width:600px;
+	max-width:100%;
+	height:400px;
+	background:url(http://www.asianinc.org/wp-content/uploads/2016/09/ad_formats.jpg) top left no-repeat #fff;
+	font-family:"Lato","Helvetica Neue",Helvetica,Arial,sans-serif;
+	font-size:10px;
+}
+
+#ad_map li {
+	margin:0;
+	padding:0;
+	list-style:none;
+}
+
+#ad_map li a {
+	position:absolute;
+	display:block;
+}
+
+#ad_map li a span {
+	display:none;
+}
+
+#ad_map li a:hover span {
+	position:absolute;
+	display:block;
+	width:240px;
+	left:5px;
+	bottom:0px;
+	padding:5px;
+	padding-left:10px;
+	border:1px solid #666;
+	border-radius:10px;
+	background:#333;
+	text-decoration:none;
+	color:white;
+	filter:alpha(opacity=80);
+	opacity:0.8;
+}
+
+#ad_map a.full_page {
+	position:relative;
+	top:35px;
+	left:32px;
+	width:250px;
+	height:325px;
+}
+
+#ad_map .ad_format_pages {
+	list-style-type:square;
+}
+
+@media only screen and (max-width:425px) {
+	#ad_map {
+		width:290px;
+		height:194px;
+		background-size:cover;
+	}
+}
+
+/*
+#ad_map a.full_page {
+	position:absolute;
+	top:35px;
+	left:32px;
+	width:250px;
+	height:320px;
+}
+
+#ad_map a.half_page {
+	position:relative;
+	top:40px;
+	left:316px;
+	width:250px;
+	height:160px;
+}
+
+#ad_map a.qtr_page {
+	position:relative;
+	top:205px;
+	left:325px;
+	width:110px;
+	height:160px;
+}
+
+#ad_map a.bus_card {
+	position:relative;
+	top:205px;
+	left:450px;
+	width:110px;
+	height:67px;
+}
+
+#ad_map a.half_page {
+	position:absolute;
+	top:40px;
+	left:435px;
+	width:250px;
+	height:160px;
+}
+
+#ad_map a.qtr_page {
+	position:absolute;
+	top:208px;
+	left:450px;
+	width:110px;
+	height:160px;
+}
+
+#ad_map a.bus_card {
+	position:absolute;
+	top:208px;
+	left:575px;
+	width:110px;
+	height:67px;
+}
+
+*/
 
 /* Sponsorship level description */
 
