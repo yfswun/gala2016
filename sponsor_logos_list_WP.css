@@ -1,0 +1,56 @@
+/* Sponsor Logos */
+
+#rig {
+	max-width:900px;
+	margin:0 auto;
+	padding:0;
+	font-size:0; /* Remember to change it back to normal font size if have captions */
+	list-style:none;
+	background-color:white;
+}
+
+#rig li {
+	display:inline-block;
+	*display:inline;/*for IE6 - IE7*/
+	width:25%;
+	min-height:100px;
+	vertical-align:middle;
+	box-sizing:border-box;
+	margin:0;
+	padding:0;
+}
+
+/* The wrapper for each item */
+.rig-cell {
+	margin:15px;
+	/*box-shadow:0 0 6px rgba(0,0,0,0.3);*/
+	display:block;
+	position:relative;
+	overflow:hidden;
+}
+
+/* If have the image layer */
+.rig-img {
+	display:block;
+	width:100%;
+	height:auto;
+	border:none;
+	transform:scale(1);
+	transition:all 1s;
+}
+
+#rig li {
+	width:25%;
+}
+
+@media only screen and (max-width:700px) {
+	#rig li {
+		width:33.33%;
+	}
+}
+
+@media only screen and (max-width:550px) {
+	#rig li {
+		width:50%;
+	}
+}
