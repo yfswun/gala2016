@@ -10,7 +10,7 @@ html {
 
 /* Override Parent CSS */
 
-p { margin-bottom:1.25em; }
+p { margin-bottom:1em; }
 
 h5 { margin-top:1.25em; }
 
@@ -60,7 +60,7 @@ h5 { margin-top:1.25em; }
 	display:block;
 	color:white;
 	text-align:center;
-	padding:12px 15px;
+	padding:10px 15px;
 	text-decoration:none;
 }
 
@@ -186,7 +186,7 @@ a.sponsorship_desc:hover {
 	display:table;
 	border-collapse:collapse;
 	max-width:100%;
-	margin:15px auto;
+	margin:20px auto;
 }
 
 .trow {
@@ -233,7 +233,7 @@ a.sponsorship_desc:hover {
 
 div.h4.ad, div.h5.ad {
 	margin-top:1.25em;
-	margin-bottom:0.2em;
+	margin-bottom:0.5em;
 }
 
 div.ad {
