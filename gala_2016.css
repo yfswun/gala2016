@@ -30,6 +30,17 @@ h5 { margin-top:1.25em; }
 	font-size:1.2em !important;
 }
 
+/* Divider */
+
+hr.div-line {
+	border:0;
+	height:1px;
+	background-image:linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0));
+	width:70%;
+	margin:20px auto;
+}
+
+
 /* Menu */
 
 #menu {
@@ -47,7 +58,7 @@ h5 { margin-top:1.25em; }
 #menu li {
 	float:left;
 /*	border-right:1px solid #bbb;*/
-	width:16.66%;
+	width:12.5%;
 }
 
 /*
