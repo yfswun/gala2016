@@ -1,0 +1,30 @@
+BEGIN:VCALENDAR
+PRODID:-//Google Inc//Google Calendar 70.9054//EN
+VERSION:2.0
+CALSCALE:GREGORIAN
+METHOD:REQUEST
+BEGIN:VEVENT
+DTSTART:20161022T010000Z
+DTEND:20161022T050000Z
+DTSTAMP:20161017T223850Z
+ORGANIZER;CN=swun@asianinc.org:mailto:swun@asianinc.org
+UID:r1tdhqgl5jhsirjaqm7pm1g5r0@google.com
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=NEEDS-ACTION;RSVP=
+ TRUE;CN=swun@asianinc.org;X-NUM-GUESTS=0:mailto:swun@asianinc.org
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=NEEDS-ACTION;RSVP=
+ TRUE;CN=yfswun@yahoo.com;X-NUM-GUESTS=0:mailto:yfswun@yahoo.com
+CLASS:PUBLIC
+CREATED:20161017T223340Z
+DESCRIPTION:View your event at https://www.google.com/calendar/event?action
+ =VIEW&eid=cjF0ZGhxZ2w1amhzaXJqYXFtN3BtMWc1cjAgeWZzd3VuQHlhaG9vLmNvbQ&tok=MT
+ cjc3d1bkBhc2lhbmluYy5vcmdiZjllMjVjNDBkYWUzMTNlYWI2MTIxZDc3YmFkZDU3ZDNhNjczY
+ 2M1&ctz=America/Los_Angeles&hl=en.
+LAST-MODIFIED:20161017T223850Z
+LOCATION:Galleria Building\, San Francisco Design Center\, Henry Adams Stre
+ et\, San Francisco\, CA\, United States
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:45th Annual Gala - "Own Your Future"
+TRANSP:OPAQUE
+END:VEVENT
+END:VCALENDAR
